@@ -1,0 +1,188 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "发布求助",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/publish/publish-skill",
+			"style": {
+				"navigationBarTitleText": "发布技能",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/publish/eval",
+			"style": {
+				"navigationBarTitleText": "评价互助",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/profile/my-skills",
+			"style": {
+				"navigationBarTitleText": "我的技能发布",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/profile/my-demands",
+			"style": {
+				"navigationBarTitleText": "我的互助发布",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/profile/edit",
+			"style": {
+				"navigationBarTitleText": "编辑个人资料",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/profile/auth",
+			"style": {
+				"navigationBarTitleText": "校园身份认证",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/profile/appeal",
+			"style": {
+				"navigationBarTitleText": "提交信用申诉",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "发现技能",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/demand/demand",
+			"style": {
+				"navigationBarTitleText": "互助需求",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息与订单",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的主页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/chat",
+			"style": {
+				"navigationBarTitleText": "沟通",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/profile/user-profile",
+			"style": {
+				"navigationBarTitleText": "用户主页",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/home/skill-detail",
+			"style": {
+				"navigationBarTitleText": "技能详情",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/demand/demand-detail",
+			"style": {
+				"navigationBarTitleText": "求助详情",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/publish/index",
+			"style": {
+				"navigationBarTitleText": "发布中心",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/message/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#F5F5F7"
+			}
+		},
+		{
+			"path": "pages/profile/favorites",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarBackgroundColor": "#F5F5F7",
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "南通大学技能互助",
+		"navigationBarBackgroundColor": "#F5F5F7",
+		"backgroundColor": "#F5F5F7"
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#8E8E93",
+		"selectedColor": "#1D1D1F",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "发现",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
+			},
+			{
+				"pagePath": "pages/demand/demand",
+				"text": "需求",
+				"iconPath": "static/tabbar/demand.png",
+				"selectedIconPath": "static/tabbar/demand-active.png"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"text": "消息",
+				"iconPath": "static/tabbar/message.png",
+				"selectedIconPath": "static/tabbar/message-active.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my-active.png"
+			}
+		]
+	}
+}

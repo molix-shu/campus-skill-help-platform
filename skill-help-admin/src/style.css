@@ -1,0 +1,90 @@
+:root {
+  /* ========== 商业化 SaaS 设计令牌 ========== */
+  --admin-bg: #F7F8FA;
+  --admin-card: #FFFFFF;
+  --admin-text: #1D2129;
+  --admin-text-secondary: #86909C;
+  --admin-text-tertiary: #C9CDD4;
+  --admin-border: #E5E6EB;
+  --admin-border-light: #F2F3F5;
+  --admin-brand: #165DFF;
+  --admin-brand-light: #E8F3FF;
+  --admin-success: #00B42A;
+  --admin-success-light: #E8FFEA;
+  --admin-warning: #FF7D00;
+  --admin-warning-light: #FFF7E8;
+  --admin-danger: #F53F3F;
+  --admin-danger-light: #FFECE8;
+  --admin-sidebar: #FFFFFF;
+  --admin-sidebar-active: #F2F3F5;
+  --admin-radius: 8px;
+  --admin-radius-lg: 12px;
+  --admin-shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.03);
+  --admin-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  --admin-font: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+  --admin-transition: all 0.2s ease;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { margin: 0; padding: 0; height: 100%; font-family: var(--admin-font); background: var(--admin-bg); color: var(--admin-text); -webkit-font-smoothing: antialiased; }
+
+/* ========== 全局 Element Plus 覆写 ========== */
+
+/* 表格 — 无边框极简风 */
+.el-table { --el-table-border-color: var(--admin-border-light); --el-table-header-bg-color: var(--admin-bg); --el-table-header-text-color: var(--admin-text-secondary); font-size: 13px; }
+.el-table th.el-table__cell { font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 12px; background: var(--admin-bg) !important; border-bottom: 1px solid var(--admin-border) !important; }
+.el-table td.el-table__cell { padding: 12px; }
+.el-table--border .el-table__inner-wrapper::after, .el-table--border::before, .el-table--border::after, .el-table__inner-wrapper::before { display: none !important; }
+.el-table--border th.el-table__cell, .el-table--border td.el-table__cell { border-right: none !important; }
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell { background: #FAFBFC !important; }
+.el-table tr:hover > td.el-table__cell { background-color: var(--admin-brand-light) !important; }
+
+/* 卡片 — 无阴影白底圆角 */
+.el-card { border-radius: var(--admin-radius-lg) !important; border: 1px solid var(--admin-border-light) !important; box-shadow: var(--admin-shadow-sm) !important; }
+.el-card__body { padding: 24px !important; }
+
+/* 按钮 — 圆角药丸型 */
+.el-button { border-radius: 6px !important; font-weight: 500; font-size: 13px; transition: var(--admin-transition); }
+.el-button--primary { background: var(--admin-brand) !important; border-color: var(--admin-brand) !important; }
+.el-button--primary:hover { background: #4080FF !important; border-color: #4080FF !important; }
+.el-button--success { background: var(--admin-success) !important; border-color: var(--admin-success) !important; }
+.el-button--warning { background: var(--admin-warning) !important; border-color: var(--admin-warning) !important; }
+.el-button--danger { background: var(--admin-danger) !important; border-color: var(--admin-danger) !important; }
+.el-button--small { padding: 5px 12px; font-size: 12px; }
+
+/* 标签 — 轻量化 */
+.el-tag { border-radius: 4px !important; font-size: 12px; font-weight: 500; border: none !important; padding: 2px 8px; }
+.el-tag--success { background: var(--admin-success-light) !important; color: var(--admin-success) !important; }
+.el-tag--warning { background: var(--admin-warning-light) !important; color: var(--admin-warning) !important; }
+.el-tag--danger { background: var(--admin-danger-light) !important; color: var(--admin-danger) !important; }
+.el-tag--info { background: var(--admin-border-light) !important; color: var(--admin-text-secondary) !important; }
+
+/* 输入框 — 柔和圆角 */
+.el-input__wrapper { border-radius: 6px !important; box-shadow: 0 0 0 1px var(--admin-border) inset !important; transition: var(--admin-transition); }
+.el-input__wrapper:hover { box-shadow: 0 0 0 1px var(--admin-brand) inset !important; }
+.el-input__wrapper.is-focus { box-shadow: 0 0 0 1px var(--admin-brand) inset, 0 0 0 3px rgba(22,93,255,0.1) !important; }
+
+/* 分页 — 柔和 */
+.el-pagination.is-background .el-pager li { border-radius: 6px !important; font-size: 13px; min-width: 32px; }
+.el-pagination.is-background .el-pager li.is-active { background: var(--admin-brand) !important; }
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next { border-radius: 6px !important; }
+
+/* 对话框 — 圆角 */
+.el-dialog { border-radius: var(--admin-radius-lg) !important; }
+.el-dialog__header { padding: 20px 24px 16px !important; }
+.el-dialog__body { padding: 0 24px 20px !important; }
+
+/* 下拉菜单 */
+.el-dropdown-menu { border-radius: 8px !important; box-shadow: var(--admin-shadow) !important; }
+
+/* 选择器 */
+.el-select .el-input__wrapper { border-radius: 6px !important; }
+
+/* 日期选择器 */
+.el-date-editor .el-input__wrapper { border-radius: 6px !important; }
+
+/* 消息框 */
+.el-message-box { border-radius: var(--admin-radius-lg) !important; }
+
+/* 菜单 — 完全覆写为浅色侧栏 */
+.el-menu { border-right: none !important; }

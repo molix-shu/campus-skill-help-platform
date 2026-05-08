@@ -1,0 +1,9 @@
+USE skill_help_db;
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE `user`;
+TRUNCATE TABLE `skill`;
+TRUNCATE TABLE `demand`;
+TRUNCATE TABLE `help_order`;
+TRUNCATE TABLE `evaluation`;
+TRUNCATE TABLE `chat_message`;
+SET FOREIGN_KEY_CHECKS = 1;
