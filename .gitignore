@@ -1,4 +1,6 @@
+# =========================
 # Dependencies
+# =========================
 node_modules/
 .pnpm-store/
 .yarn/
@@ -6,15 +8,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# =========================
 # Build outputs
+# =========================
 dist/
 dist-ssr/
 build/
-unpackage/
 target/
 out/
+unpackage/
 
+# =========================
 # Java / Spring Boot
+# =========================
 *.class
 *.jar
 *.war
@@ -22,24 +28,76 @@ out/
 logs/
 *.log
 
-# IDE
-.idea/
-.vscode/
-*.iml
+# =========================
+# Sensitive backend configs
+# =========================
+skill-help-backend/src/main/resources/application.yml
+skill-help-backend/src/main/resources/application.yaml
+skill-help-backend/src/main/resources/application-dev.yml
+skill-help-backend/src/main/resources/application-dev.yaml
+skill-help-backend/src/main/resources/application-prod.yml
+skill-help-backend/src/main/resources/application-prod.yaml
+skill-help-backend/src/main/resources/application-local.yml
+skill-help-backend/src/main/resources/application-local.yaml
+skill-help-backend/src/main/resources/application.properties
+skill-help-backend/src/main/resources/application-dev.properties
+skill-help-backend/src/main/resources/application-prod.properties
+skill-help-backend/src/main/resources/application-local.properties
 
-# OS
-.DS_Store
-Thumbs.db
+# Keep example config files
+!skill-help-backend/src/main/resources/application-example.yml
+!skill-help-backend/src/main/resources/application-example.yaml
+!skill-help-backend/src/main/resources/application-example.properties
 
-# Env / secrets
+# =========================
+# Env files / secrets
+# =========================
 .env
 .env.*
 !.env.example
 
-# Local config
-application-local.yml
-application-local.yaml
-application-dev.yml
-application-dev.yaml
-application-prod.yml
-application-prod.yaml
+# =========================
+# Upload files / user data
+# =========================
+uploads/
+upload/
+files/
+file/
+avatar/
+avatars/
+images/upload/
+static/upload/
+public/upload/
+skill-help-backend/uploads/
+skill-help-backend/upload/
+skill-help-backend/files/
+skill-help-backend/avatar/
+skill-help-backend/avatars/
+
+# =========================
+# Database files
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# 如果后续有真实数据导出 SQL，可以使用这种命名并忽略
+*_data.sql
+*_backup.sql
+*_dump.sql
+
+# 注意：不要忽略 init_db.sql、alter_*.sql 这类结构脚本
+# 它们通常是项目初始化所需文件
+
+# =========================
+# IDE / Editor
+# =========================
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db

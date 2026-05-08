@@ -13,8 +13,8 @@ spring:
     # 这里的 skill_help_db 就是咱们刚刚成功创建的数据库名
     url: jdbc:mysql://127.0.0.1:3306/skill_help_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     # 注意：请将 root 和你的数据库密码替换为你真实的配置
-    username: root
-    password: admin123 # 【TODO】改写成你的本地数据库密码
+    username: your_username
+    password: your_password # 【TODO】改写成你的本地数据库密码
 
   # 允许大请求体（Base64图片可能很大）
   servlet:
